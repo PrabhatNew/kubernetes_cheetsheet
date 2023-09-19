@@ -4,8 +4,10 @@ This is a demonstration of how to use Kubernetes Ingress to route traffic to dif
 ## Create Ingress resource
 After creating your ingress resource include these annotations
   annotations:
+    ```
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     kubernetes.io/ingress.class: "nginx"
+    ```
 
 ## Install certificate manager
 If you want to use HTTPS with your Ingress, you will need to install a certificate manager. Run the following command to install the Jetstack cert-manager:
